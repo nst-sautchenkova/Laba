@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>Laba</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="_Laba_admin/css/style.css" /> 
+    
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+    
+    <script type="text/javascript" src="js/jquery.js"></script>
+   
+    
+</head>
+	<body>
+       
+        <!--------------------------------------->
+        <!--------------------------------------->
+        <!--  NAV PAGES                        -->
+        <!--------------------------------------->
+        <!--------------------------------------->
+        <div id="nav-pages">
+            <a href="index.html">1</a>
+            <a href="news.html">2</a>
+            <a href="how-start.html">3</a>
+            <a href="question.html">4</a>
+            <a href="faq.html">5</a>
+            <a href="admin-index.html">6</a>
+            <a href="bonus.html">7</a>
+            <a href="buy-labs.html">8</a>
+            <a href="buy-labs2.html">9</a>
+            <a href="my-business.html">10</a>
+            <a href="partners.html">11</a>
+            <a href="settings.html">12</a>
+            <a href="banner.html">13</a>
+        </div>
+        <style>
+			#nav-pages{
+				position: fixed;
+				height: 100vh;
+				z-index: 9999;
+				background: #fff;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				align-items: center;
+				overflow-y: auto;
+				padding: 0 5px 5px;
+				right: 0;
+				top: 0;
+			}
+			#nav-pages a{
+				text-decoration: none;
+				color: #fff;
+				display: block;
+				padding: 5px;
+				background: rgba(0, 0, 0, 0.4);
+				text-align: center;
+				width: 30px;
+				margin-top: 5px;
+			}
+			#nav-pages a:hover{
+				background: rgba(0, 0, 0, 0.8);
+			}
+		</style>
+        <!--------------------------------------->
+        <!--------------------------------------->
+        <!--  NAV PAGES                        -->
+        <!--------------------------------------->
+        <!--------------------------------------->
+       
+       <div id="loader">
+            <div id="cube-loader">
+                <div id="flask">
+					<svg viewBox="0 0 266 452.2">
+						<g id="Слой_2" data-name="Слой 2">
+							<g id="Capa_1" data-name="Capa 1">
+								<path fill="#fedc0b" d="M264.63,433.33,184.28,272V169.62a15,15,0,0,0-2-29.87H83.72a15,15,0,0,0-2,29.87V272L1.37,433.33A13.05,13.05,0,0,0,13.05,452.2H253a13,13,0,0,0,11.68-18.87Zm-180.8-107,24-48.19V169.76h50.36v14.87H138a10,10,0,0,0,0,20h20.21v32.19H138a10,10,0,1,0,0,20h20.21v21.27l24,48.19Z"/>
+							</g>
+						</g>
+					</svg>
+                	<div class="bubble-block">
+                        <div class="bubble b0"></div>
+                        <div class="bubble b1"></div>
+                        <div class="bubble b2"></div>
+                        <div class="bubble b3"></div>
+                        <div class="bubble b4"></div>
+                        <div class="bubble b5"></div>
+                        <div class="bubble b6"></div>
+                        <div class="bubble b7"></div>
+                        <div class="bubble b8"></div>
+                        <div class="bubble b9"></div>
+                        
+                        <div class="swirl s0"></div>
+                        <div class="swirl s1"></div>
+                        <div class="swirl s2"></div>
+                        <div class="swirl s3"></div>
+                        <div class="swirl s4"></div>
+                        <div class="swirl s5"></div>
+                    </div>
+                </div><!--flask-->
+           </div>
+        </div><!--/Loader-->
+        
+        <div id="main" class="admin">
+            <div id="admin-menu">
+            	<div class="a-menu-body">
+                    <a href="#" class="logo"><img src="img/logo.png" alt="laba"/></a>
+                    <div class="cd-nav-trigger">
+                        <div class="hamburger-menu menu-toggle">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="ico">
+									<svg x="0px" y="0px" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480;" xml:space="preserve">
+                                        <path d="M432.2,219.5L432,80c0-6.7-4.2-12.7-10.5-15l-176-64c-3.5-1.3-7.4-1.3-10.9,0l-176,64C52.2,67.3,48,73.3,48,80l-0.2,139.5
+                                                C46.8,333.7,46,416.2,234.9,479.2c1.6,0.5,3.4,0.8,5.1,0.8s3.4-0.3,5.1-0.8C434,416.2,433.2,333.7,432.2,219.5z M240,96
+                                                c35.3,0,64,28.7,64,64s-28.7,64-64,64s-64-28.7-64-64S204.7,96,240,96z M320,352H160c-8.8,0-16-7.2-16-16c0-44.1,35.9-80,80-80h32
+                                                c44.1,0,80,35.9,80,80C336,344.8,328.8,352,320,352z"/>
+                                    </svg>
+                                </div>
+                                <span>Аккаунт</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#">
+                                <div class="ico">
+									<svg x="0px" y="0px" viewBox="0 0 485.2 485.2" style="enable-background:new 0 0 485.2 485.2;" xml:space="preserve">
+										<path d="M440.8,176.7h-252c-24.4,0-44.4,20-44.4,44.4v159.6c0,24.4,20,44.4,44.4,44.4h252c24.4,0,44.4-20,44.4-44.4V221.1
+                                                    C485.3,196.6,465.2,176.7,440.8,176.7z M461.3,381.3c0,8.8-7.2,16.1-16.1,16.1H188.3c-8.8,0-16.1-7.2-16.1-16.1V269h289.1V381.3
+                                                    z M461.3,226.7H172.2v-6.1c0-8.8,7.2-16.1,16.1-16.1h256.9c8.8,0,16.1,7.2,16.1,16.1V226.7z"/>
+										<path d="M185.6,149.3h156.3l-31.8-64.4c-10.9-22-37.6-31-59.6-20.1L24.7,176.4C2.7,187.3-6.3,214,4.6,236l70.8,143.1
+                                                c9.5,19.3,31.4,28.7,51.5,23.2c-6-10.1-9.4-21.8-9.4-34.3V217.5C117.4,180,148.1,149.3,185.6,149.3z"/>
+                                        
+                                        <path d="M217.7,380.1c8.7,0,16.6-3.9,21.8-10.1c5.3,6.2,13.1,10.1,21.8,10.1c15.9,0,28.8-12.9,28.8-28.8s-12.9-28.8-28.8-28.8
+                                                c-8.7,0-16.6,3.9-21.8,10.1c-5.3-6.2-13.1-10.1-21.8-10.1c-15.9,0-28.8,12.9-28.8,28.8S201.8,380.1,217.7,380.1z"/>
+                                    </svg>
+                                </div>
+                                <span>Купить бизнес</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="ico">
+									<svg x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                        <path d="M320,256v16c0,8.8-7.2,16-16,16h-96c-8.8,0-16-7.2-16-16v-16H32v192c0,17.7,14.3,32,32,32h384c17.7,0,32-14.3,32-32V256
+                                            H320z"/>
+                                        <path d="M496,96H352V48c0-8.8-7.2-16-16-16H176c-8.8,0-16,7.2-16,16v48H16c-8.8,0-16,7.2-16,16v96c0,8.8,7.2,16,16,16h176v-16
+                                            c0-8.8,7.2-16,16-16h96c8.8,0,16,7.2,16,16v16h176c8.8,0,16-7.2,16-16v-96C512,103.2,504.8,96,496,96z M320,96H192V64h128V96z"/>
+                                        <rect x="224" y="224" width="64" height="32"/>
+                                    </svg>
+                                </div>
+                                <span>Мой бизнес</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="ico">
+									<svg x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                        <circle cx="416" cy="64" r="64"/>
+                                        <path d="M511.9,334.4l-14.6-145.6c-1.6-16.4-15.3-28.8-31.8-28.8H448c-4.3,0-8.3,1.7-11.3,4.7L416,185.4l-20.7-20.7
+                                            c-3-3-7.1-4.7-11.3-4.7h-17.5c-16.5,0-30.2,12.4-31.8,28.8l-14.6,145.6c-0.5,4.5,1,9,4,12.4c3,3.3,7.3,5.2,11.9,5.2h17.5
+                                            l13.1,131.2c1.6,16.4,15.3,28.8,31.8,28.8h35.1c16.5,0,30.2-12.4,31.8-28.8L478.5,352H496c4.5,0,8.8-1.9,11.9-5.2
+                                            C510.9,343.4,512.4,338.9,511.9,334.4z"/>
+                                        <path d="M80,320H16c-8.8,0-16,7.2-16,16v160c0,8.8,7.2,16,16,16h64c8.8,0,16-7.2,16-16V336C96,327.2,88.8,320,80,320z"/>
+                                        <path d="M240,160h-64c-8.8,0-16,7.2-16,16v320c0,8.8,7.2,16,16,16h64c8.8,0,16-7.2,16-16V176C256,167.2,248.8,160,240,160z"/>
+                                    </svg>
+                                </div>
+                                <span>Партнеры</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="ico">
+									<svg x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                        <path d="M480,400V112c0-17.6-14.3-32-32-32H64c-17.6,0-32,14.4-32,32v288H0v16c0,8.8,7.2,16,16,16h480c8.8,0,16-7.2,16-16v-16H480
+                                                z M448,368H64v-84.9l75.5-28.3c8.8,10.4,21.8,17.2,36.5,17.2c17.4,0,32.6-9.4,41-23.4l72.2,14.2c4.7,21.5,23.9,37.8,46.8,37.8
+                                                c26.5,0,48-21.5,48-48c0-2.5-0.4-4.9-0.7-7.3l64.7-40.5V368z M448,167.1l-79.9,50c-8.5-7.7-19.7-12.5-32.1-12.5
+                                                c-18.7,0-34.7,10.8-42.7,26.4l-70-13.8C220,194,200.2,176,176,176c-26.5,0-48,21.5-48,48c0,0.3,0.1,0.6,0.1,0.9l-64.1,24V112h384
+                                                V167.1z"/>
+                                    </svg>
+                                </div>
+                                <span>Банеры</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="ico">
+									<svg x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                        <circle cx="96" cy="64" r="64"/>
+                                        <path d="M191.9,334.4l-14.6-145.6c-1.6-16.4-15.3-28.8-31.8-28.8H128c-4.3,0-8.3,1.7-11.3,4.7L96,185.3l-20.7-20.7
+                                            c-3-3-7.1-4.7-11.3-4.7H46.5c-16.5,0-30.2,12.4-31.8,28.8L0.1,334.4c-0.4,4.5,1,9,4.1,12.4c3,3.3,7.3,5.2,11.8,5.2h17.5
+                                            l13.1,131.2C48.2,499.6,62,512,78.5,512h35c16.5,0,30.2-12.4,31.8-28.8L158.5,352H176c4.5,0,8.8-1.9,11.9-5.2
+                                            C190.9,343.4,192.4,338.9,191.9,334.4z"/>
+                                        <path d="M496,192h-40.3c-5.8-16.7-14.7-32.1-26-45.5l20.1-34.9c2.1-3.7,2.7-8,1.6-12.1c-1.1-4.1-3.8-7.6-7.5-9.7l-55.7-32
+                                            c-3.6-2.1-8-2.6-12.2-1.6c-4.1,1.1-7.6,3.8-9.7,7.5l-19.9,34.7c-17.1-3.3-35.6-3.3-52.7,0l-20-34.8c-4.4-7.6-14.2-10.3-21.9-5.9
+                                            l-55.7,32c-3.7,2.1-6.4,5.6-7.5,9.7c-1.1,4.1-0.5,8.5,1.6,12.1l20,34.9c-3.7,4.4-6.7,9.2-9.8,14c4.4,7.6,7.8,15.8,8.7,25.1
+                                            l14.6,145.6c1.3,13.4-3.1,26.8-12.1,36.9l-0.1,0.1c-6,6.6-13.8,11.1-22.2,13.6c1.2,3.4,3.5,6.4,6.8,8.4l55.7,32
+                                            c2.4,1.4,5.2,2.1,8,2.1c1.4,0,2.8-0.2,4.2-0.6c4.1-1.1,7.6-3.8,9.7-7.5l19.9-34.7c17.1,3.3,35.6,3.3,52.7,0l19.9,34.7
+                                            c2.1,3.7,5.6,6.4,9.7,7.5c4.1,1.1,8.5,0.6,12.2-1.6l55.7-32c3.7-2.1,6.4-5.6,7.5-9.7c1.1-4.1,0.6-8.4-1.6-12.1l-20.1-34.9
+                                            c11.5-13.3,20.4-28.7,26.1-45.4H496c8.8,0,16-7.2,16-16v-64C512,199.2,504.8,192,496,192z M320,304c-35.3,0-64-28.7-64-64
+                                            s28.7-64,64-64s64,28.7,64,64S355.3,304,320,304z"/>
+                                    </svg>
+                                </div>
+                                <span>Настройки</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div><!--admin-menu-->
+            
+            <div id="wrapper">
+                <header>
+                    <div class="top">
+                        <div class="container">
+                            <div class="flex">
+                                <div class="l-item">
+                                	<div class="item f-item">
+                                        <div class="img"><img src="img/admin/img-1.jpg" alt=""/></div>
+                                        <div>
+                                            <div class="title">Username</div>
+                                            <div class="value">Testlogin </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">E-mail:</div>
+                                        <div class="value">testmember@gmail.com</div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">Ваш IP</div>
+                                        <div class="value">123.256.318.125</div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="title">Вас пригласил</div>
+                                        <div class="value">mr. joposran4ik</div>
+                                    </div>
+                                </div>
+                                <div class="register-login">
+                                    <div id="login" class="btn green">Выйти</div>
+                                </div>
+                            </div>
+                        </div><!--container-->
+                    </div><!--/top-->
+                    
+                    <div class="bottom">
+                    	<div class="container">
+                        	<div class="flex">
+                                <div class="f-ps-block">
+                                    <div class="img"><img src="img/admin/ps/btn.png" alt=""/></div>
+                                    <div class="value">0,00000000</div>
+                                </div><!--f-ps-block-->
+                                <div class="f-ps-block">
+                                    <div class="img"><img src="img/admin/ps/etc.png" alt=""/></div>
+                                    <div class="value">0,00000000</div>
+                                </div><!--f-ps-block-->
+                                <div class="f-ps-block">
+                                    <div class="img"><img src="img/admin/ps/dash.png" alt=""/></div>
+                                    <div class="value">0,00000000</div>
+                                </div><!--f-ps-block-->
+                                <div class="f-ps-block">
+                                    <div class="img"><img src="img/admin/ps/ltc.png" alt=""/></div>
+                                    <div class="value">0,00000000</div>
+                                </div><!--f-ps-block-->
+                                <div class="f-ps-block">
+                                    <div class="img"><img src="img/admin/ps/usd.png" alt=""/></div>
+                                    <div class="value">156.12</div>
+                                </div><!--f-ps-block-->
+                                <div class="f-ps-block">
+                                    <div class="img"><img src="img/admin/ps/rub.png" alt=""/></div>
+                                    <div class="value">4562.28</div>
+                                </div><!--f-ps-block-->
+                                
+                                <div class="purse-block">
+                                    <a href="#" class="replenish">
+                                        <div class="title">Пополнить</div>
+                                        <div class="ico">
+                                            <div class="svg-top"><img src="img/admin/ico/arrow.png" alt=""/></div>
+                                            <div class="svg-bot">
+                                        		<svg  width="19px" height="9px">
+													<defs>
+														<linearGradient id="PSgrad_0" x1="0%" x2="0%" y1="100%" y2="0%">
+														  <stop offset="0%" stop-color="rgb(124,33,102)" stop-opacity="1" />
+														  <stop offset="100%" stop-color="rgb(0,0,0)" stop-opacity="1" />
+														</linearGradient>
+													</defs>
+													<path fill-rule="evenodd"  stroke="rgb(60, 58, 39)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M2.000,1.000 L2.000,6.000 L16.000,6.000 L16.000,1.000 "/>
+												</svg>
+                                        	</div>
+                                        </div>
+                                    </a><!--replenish-->
+                                    <a href="#" class="withdraw">
+                                        <div class="title">Вывести</div>
+                                        <div class="ico">
+                                            <div class="svg-top"><img src="img/admin/ico/arrow3.png" alt=""/></div>
+                                            <div class="svg-bot">
+                                        		<svg  width="19px" height="9px">
+													<defs>
+														<linearGradient id="PSgrad_0" x1="0%" x2="0%" y1="100%" y2="0%">
+														  <stop offset="0%" stop-color="rgb(124,33,102)" stop-opacity="1" />
+														  <stop offset="100%" stop-color="rgb(0,0,0)" stop-opacity="1" />
+														</linearGradient>
+													</defs>
+													<path fill-rule="evenodd"  stroke="rgb(60, 58, 39)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M2.000,1.000 L2.000,6.000 L16.000,6.000 L16.000,1.000 "/>
+												</svg>
+                                        	</div>
+                                        </div>
+                                    </a><!--withdraw-->
+                                </div>
+                            </div>
+                        </div><!--container-->
+                    </div><!--/bottom-->
+                </header>
+                
+                
+                <section id="tariff-block">
+                    <div class="container">
+                    	<div class="m-title-block animtop"><h1>Покупка бизнеса</h1></div>
+                        <div class="tab-block animtop">
+                            <ul class="tabs flex">
+                                <li class="current">
+                                    <div class="item">
+                                        <div class="img">
+                                            <div class="flask-block">
+												<svg viewBox="0 0 266 452.2" class="flasksvg">
+                                                    <g id="flaski" data-name="flaski">
+                                                        <path class="flaskico" d="M264.63,433.33,184.28,272V169.62a15,15,0,0,0-2-29.87H83.72a15,15,0,0,0-2,29.87V272L1.37,433.33A13.05,13.05,0,0,0,13.05,452.2H253a13,13,0,0,0,11.68-18.87Zm-180.8-107,24-48.19V169.76h50.36v14.87H138a10,10,0,0,0,0,20h20.21v32.19H138a10,10,0,1,0,0,20h20.21v21.27l24,48.19Z"/>
+                                                        <path class="bubble1" d="M158.11,33.77a16.89,16.89,0,1,0-16.88-16.89A16.91,16.91,0,0,0,158.11,33.77Z"/>
+                                                        <path class="bubble2" d="M155,67A23.38,23.38,0,1,0,178.34,90.4,23.41,23.41,0,0,0,155,67Z"/>
+                                                        <path class="bubble3" d="M109.27,103.62a29.93,29.93,0,0,0,18-6,28.59,28.59,0,0,1,11.37-30.68,30.13,30.13,0,1,0-29.41,36.69Z"/>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div><!--/img-->
+                                        <div class="title"><p><span class="grad-txt">ЛАБОРАТОРИИ</span></p></div>
+                                    </div><!--/item-->
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="img atom">
+                                            <img src="img/ico/atom.png" alt=""/>
+                                        </div><!--/img-->
+                                        <div class="title"><p><span class="grad-txt">ХИМИКАТЫ</span></p></div>
+                                    </div><!--/item-->
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="img">
+                                            <div class="handcuff-block">
+												<svg height="512pt" version="1.1" viewBox="0 -16 512 512" width="512pt">
+													<g id="surface1">
+													<path class="handcuffico" d="M 208.53125 381.039062 C 194.410156 396.480469 174.089844 406.160156 151.511719 406.160156 C 138.96875 406.160156 127.128906 403.171875 116.660156 397.871094 L 76.960938 460.371094 C 98.890625 472.78125 124.199219 479.859375 151.140625 479.859375 C 193.851562 479.859375 232.480469 462.050781 259.988281 433.46875 C 250.269531 426.941406 241.171875 419.449219 232.769531 411.058594 C 223.578125 401.859375 215.46875 391.828125 208.53125 381.039062 Z M 208.53125 381.039062 " style=" stroke:none;fill-rule:nonzero;fill-opacity:1;" />
+													<path class="handcuffico" d="M 429.011719 148.039062 L 414.25 91.21875 L 376.039062 91.21875 C 375.121094 86.089844 373.828125 81.078125 372.21875 76.21875 C 370.511719 71.039062 368.429688 66.03125 366 61.21875 C 347.71875 24.941406 310.121094 0 266.800781 0 L 247.160156 0 C 185.941406 0 136.140625 49.800781 136.140625 111.011719 L 136.140625 141 L 91.449219 141 L 76.878906 197.050781 C 54.988281 209.421875 36.46875 227.089844 23.039062 248.480469 C 7.96875 272.488281 0 300.238281 0 328.71875 C 0 374.359375 20.328125 415.339844 52.410156 443.070312 L 92.929688 379.289062 C 81.28125 365.75 74.230469 348.140625 74.230469 328.878906 C 74.230469 286.210938 108.828125 251.609375 151.511719 251.609375 C 162.140625 251.609375 172.269531 253.761719 181.488281 257.640625 C 185.019531 232.519531 193.78125 208.398438 207.339844 186.789062 C 210.808594 181.261719 214.570312 175.941406 218.589844 170.839844 L 210.828125 141 L 166.140625 141 L 166.140625 111.011719 C 166.140625 66.339844 202.480469 30 247.160156 30 L 266.800781 30 C 292.710938 30 315.828125 42.230469 330.660156 61.21875 C 334.28125 65.851562 337.398438 70.871094 339.949219 76.21875 C 342.230469 80.980469 344.050781 86 345.359375 91.21875 L 307.46875 91.21875 L 292.699219 148.039062 C 268.398438 160.339844 247.871094 179 233.320312 201.851562 C 219.179688 224.019531 210.671875 250.121094 209.800781 278.148438 C 209.75 279.75 209.71875 281.359375 209.71875 282.96875 C 209.71875 307.300781 215.46875 330.28125 225.679688 350.628906 C 234.410156 368.058594 246.421875 383.558594 260.898438 396.328125 L 269.089844 383.441406 L 296.671875 340.019531 C 283.25 324.859375 275.101562 304.941406 275.101562 283.160156 C 275.101562 272.011719 277.230469 261.351562 281.121094 251.570312 C 293.71875 219.789062 324.78125 197.261719 360.988281 197.261719 C 370.710938 197.261719 380.058594 198.878906 388.78125 201.878906 C 389.441406 202.101562 390.109375 202.339844 390.761719 202.578125 C 391.269531 202.769531 391.78125 202.960938 392.289062 203.160156 L 393.789062 203.761719 C 425.050781 216.558594 447.058594 247.289062 447.058594 283.160156 C 447.058594 320.28125 423.488281 351.890625 390.488281 363.828125 C 389.179688 364.308594 387.851562 364.761719 386.5 365.179688 C 386 365.339844 385.488281 365.488281 384.980469 365.640625 C 377.371094 367.859375 369.320312 369.050781 360.988281 369.050781 C 346.269531 369.050781 332.410156 365.328125 320.289062 358.78125 L 293.371094 401.171875 L 285.300781 413.890625 C 307.53125 426.75 333.328125 434.109375 360.859375 434.109375 C 444.328125 434.109375 512 366.441406 512 282.96875 C 512 224.019531 478.25 172.960938 429.011719 148.039062 Z M 165.601562 207.359375 L 136.679688 207.359375 L 136.679688 178.441406 L 165.601562 178.441406 Z M 375.320312 159.601562 L 346.398438 159.601562 L 346.398438 130.679688 L 375.320312 130.679688 Z M 375.320312 159.601562 " style=" stroke:none;fill-rule:nonzero;fill-opacity:1;" />
+													</g>
+												</svg>
+                                            </div>
+                                        </div><!--/img-->
+                                        <div class="title"><p><span class="grad-txt">Отделы ОБН</span></p></div>
+                                    </div><!--/item-->
+                                </li>
+                            </ul>
+                            <div class="box visible">
+                                <div class="txt-block">
+                                	<p>Мощность вашей лаборатории определяет количество Вашего ежедневного дохода. Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.</p>
+                                </div>
+                                <div class="filter-block">
+                                    <div class="filter-item">
+                                        <div id="s-trailer">
+                                            <div class="img">
+                                                <div class="bubbles-block b-1">
+                                                    <span class="bubbles-1 bubbles"></span>
+                                                    <span class="bubbles-2 bubbles"></span>
+                                                    <span class="bubbles-3 bubbles"></span>
+                                                    <span class="bubbles-4 bubbles"></span>
+                                                </div>
+                                                <div class="bubbles-block b-2">
+                                                    <span class="bubbles-1 bubbles"></span>
+                                                    <span class="bubbles-2 bubbles"></span>
+                                                    <span class="bubbles-3 bubbles"></span>
+                                                    <span class="bubbles-4 bubbles"></span>
+                                                </div>
+                                                <img src="img/filter/s-trailer.png" alt=""/>
+                                            </div><!--img-->
+                                            <div class="info">
+                                                <div class="title">
+                                                    <span>Лаборатория </span>
+                                                    <h2>Малый трейлер</h2>
+                                                </div>
+                                                <div class="price-block">
+                                                    <div class="item">
+                                                        <div class="value">25$</div>
+                                                        <p>цена<br/>покупки</p>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="value">3$</div>
+                                                        <p>прибыль<br/>в сутки</p>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-block"><div class="btn yellow">Купить</div></div>
+                                            </div>
+                                        </div>
+                                    </div><!--filter-block filter-item-->
+                                    
+                                    <div class="filter-item">
+                                        <div id="trailer"> 
+                                            <div class="img">
+                                                <div class="bubbles-block b-1">
+                                                    <span class="bubbles-1 bubbles"></span>
+                                                    <span class="bubbles-2 bubbles"></span>
+                                                    <span class="bubbles-3 bubbles"></span>
+                                                    <span class="bubbles-4 bubbles"></span>
+                                                </div>
+                                                <div class="bubbles-block b-2">
+                                                    <span class="bubbles-1 bubbles"></span>
+                                                    <span class="bubbles-2 bubbles"></span>
+                                                    <span class="bubbles-3 bubbles"></span>
+                                                    <span class="bubbles-4 bubbles"></span>
+                                                </div>
+                                                <img src="img/filter/trailer.png" alt=""/>
+                                            </div><!--img-->
+                                            <div class="info">
+                                                <div class="title">
+                                                    <span>Лаборатория </span>
+                                                    <h2>обычный Трейлер</h2>
+                                                </div>
+                                                <div class="price-block">
+                                                    <div class="item">
+                                                        <div class="value">25$</div>
+                                                        <p>цена<br/>покупки</p>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="value">3$</div>
+                                                        <p>прибыль<br/>в сутки</p>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-block"><a href="#" class="btn yellow">Купить</a></div>
+                                            </div>
+                                        </div>
+                                    </div><!--filter-block filter-item-->
+                                    
+                                    <div class="filter-item">
+                                        <div id="b-trailer"> 
+                                            <div class="img">
+                                                <div class="bubbles-block b-1">
+                                                    <span class="bubbles-1 bubbles"></span>
+                                                    <span class="bubbles-2 bubbles"></span>
+                                                    <span class="bubbles-3 bubbles"></span>
+                                                    <span class="bubbles-4 bubbles"></span>
+                                                </div>
+                                                <div class="bubbles-block b-2">
+                                                    <span class="bubbles-1 bubbles"></span>
+                                                    <span class="bubbles-2 bubbles"></span>
+                                                    <span class="bubbles-3 bubbles"></span>
+                                                    <span class="bubbles-4 bubbles"></span>
+                                                </div>
+                                                <img src="img/filter/b-trailer.png" alt=""/>
+                                            </div><!--img-->
+                                            <div class="info">
+                                                <div class="title">
+                                                    <span>Лаборатория </span>
+                                                    <h2>Большой трейлер</h2>
+                                                </div>
+                                                <div class="price-block">
+                                                    <div class="item">
+                                                        <div class="value">25$</div>
+                                                        <p>цена<br/>покупки</p>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="value">3$</div>
+                                                        <p>прибыль<br/>в сутки</p>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-block"><a href="#" class="btn yellow">Купить</a></div>
+                                            </div>
+                                        </div>
+                                    </div><!--filter-block filter-item-->
+                                    
+                                    
+                                    <div class="filter-item">
+                                        <div id="garage"> 
+                                            <div class="img">
+                                                <div class="bubbles-block b-1">
+                                                    <span class="bubbles-1 bubbles"></span>
+                                                    <span class="bubbles-2 bubbles"></span>
+                                                    <span class="bubbles-3 bubbles"></span>
+                                                    <span class="bubbles-4 bubbles"></span>
+                                                </div>
+                                                <div class="bubbles-block b-2">
+                                                    <span class="bubbles-1 bubbles"></span>
+                                                    <span class="bubbles-2 bubbles"></span>
+                                                    <span class="bubbles-3 bubbles"></span>
+                                                    <span class="bubbles-4 bubbles"></span>
+                                                </div>
+                                                <img src="img/filter/garage.png" alt=""/>
+                                            </div><!--img-->
+                                            <div class="info">
+                                                <div class="title">
+                                                    <span>Лаборатория </span>
+                                                    <h2>В ГАРАЖЕ</h2>
+                                                </div>
+                                                <div class="price-block">
+                                                    <div class="item">
+                                                        <div class="value">25$</div>
+                                                        <p>цена<br/>покупки</p>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="value">3$</div>
+                                                        <p>прибыль<br/>в сутки</p>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-block"><a href="#" class="btn yellow">Купить</a></div>
+                                            </div>
+                                        </div>
+                                    </div><!--filter-block filter-item-->
+                                    
+                                    <div class="filter-item">
+                                        <div id="home"> 
+                                            <div class="img">
+                                                <div class="bubbles-block b-1">
+                                                    <span class="bubbles-1 bubbles"></span>
+                                                    <span class="bubbles-2 bubbles"></span>
+                                                    <span class="bubbles-3 bubbles"></span>
+                                                    <span class="bubbles-4 bubbles"></span>
+                                                </div>
+                                                <div class="bubbles-block b-2">
+                                                    <span class="bubbles-1 bubbles"></span>
+                                                    <span class="bubbles-2 bubbles"></span>
+                                                    <span class="bubbles-3 bubbles"></span>
+                                                    <span class="bubbles-4 bubbles"></span>
+                                                </div>
+                                                <img src="img/filter/home.png" alt=""/>
+                                            </div><!--img-->
+                                            <div class="info">
+                                                <div class="title">
+                                                    <span>Лаборатория </span>
+                                                    <h2>В ДОМЕ</h2>
+                                                </div>
+                                                <div class="price-block">
+                                                    <div class="item">
+                                                        <div class="value">25$</div>
+                                                        <p>цена<br/>покупки</p>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="value">3$</div>
+                                                        <p>прибыль<br/>в сутки</p>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-block"><a href="#" class="btn yellow">Купить</a></div>
+                                            </div>
+                                        </div>
+                                    </div><!--filter-block filter-item-->
+                                    
+                                    <div class="filter-item">
+                                        <div id="laundry"> 
+                                            <div class="img">
+                                                <div class="bubbles-block b-1">
+                                                    <span class="bubbles-1 bubbles"></span>
+                                                    <span class="bubbles-2 bubbles"></span>
+                                                    <span class="bubbles-3 bubbles"></span>
+                                                    <span class="bubbles-4 bubbles"></span>
+                                                </div>
+                                                <div class="bubbles-block b-2">
+                                                    <span class="bubbles-1 bubbles"></span>
+                                                    <span class="bubbles-2 bubbles"></span>
+                                                    <span class="bubbles-3 bubbles"></span>
+                                                    <span class="bubbles-4 bubbles"></span>
+                                                </div>
+                                                <img src="img/filter/laundry.png" alt=""/>
+                                            </div><!--img-->
+                                            <div class="info">
+                                                <div class="title">
+                                                    <span>Лаборатория </span>
+                                                    <h2>В ПРАЧЕЧНОЙ</h2>
+                                                </div>
+                                                <div class="price-block">
+                                                    <div class="item">
+                                                        <div class="value">25$</div>
+                                                        <p>цена<br/>покупки</p>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="value">3$</div>
+                                                        <p>прибыль<br/>в сутки</p>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-block"><a href="#" class="btn yellow">Купить</a></div>
+                                            </div>
+                                        </div>
+                                    </div><!--filter-block filter-item-->
+                                </div><!--filter-block-->
+                            </div><!--BOX 1-->
+                            
+                            <div class="box">
+                                <div class="txt-block">
+                                	<p>Мощность вашей лаборатории определяет количество Вашего ежедневного дохода. Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.</p>
+                                </div>
+                                <div class="filter-block">
+                                    <div class="filter-item">
+                                        <div id="glycerol"> 
+                                            <div class="img">
+                                                <div class="bubbles-block b-1">
+                                                    <span class="bubbles-1 bubbles"></span>
+                                                    <span class="bubbles-2 bubbles"></span>
+                                                    <span class="bubbles-3 bubbles"></span>
+                                                    <span class="bubbles-4 bubbles"></span>
+                                                </div>
+                                                <div class="bubbles-block b-2">
+                                                    <span class="bubbles-1 bubbles"></span>
+                                                    <span class="bubbles-2 bubbles"></span>
+                                                    <span class="bubbles-3 bubbles"></span>
+                                                    <span class="bubbles-4 bubbles"></span>
+                                                </div>
+                                                <img src="img/filter/glycerol.png" alt=""/>
+                                            </div><!--img-->
+                                            <div class="info">
+                                                <div class="title">
+                                                    <span>Химикат</span>
+                                                    <h2>Глицерин</h2>
+                                                </div>
+                                                <div class="price-block">
+                                                    <div class="item">
+                                                        <div class="value">25$</div>
+                                                        <p>цена<br/>покупки</p>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="value">3$</div>
+                                                        <p>прибыль<br/>в сутки</p>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-block"><a href="#" class="btn yellow">Купить</a></div>
+                                            </div>
+                                        </div>
+                                    </div><!--filter-block filter-item-->
+                                    
+                                    <div class="filter-item">
+                                        <div id="nitroglycerine">
+                                            <div class="img">
+                                                <div class="bubbles-block b-1">
+                                                    <span class="bubbles-1 bubbles"></span>
+                                                    <span class="bubbles-2 bubbles"></span>
+                                                    <span class="bubbles-3 bubbles"></span>
+                                                    <span class="bubbles-4 bubbles"></span>
+                                                </div>
+                                                <div class="bubbles-block b-2">
+                                                    <span class="bubbles-1 bubbles"></span>
+                                                    <span class="bubbles-2 bubbles"></span>
+                                                    <span class="bubbles-3 bubbles"></span>
+                                                    <span class="bubbles-4 bubbles"></span>
+                                                </div>
+                                                <img src="img/filter/nitroglycerine.png" alt=""/>
+                                            </div><!--img-->
+                                            <div class="info">
+                                                <div class="title">
+                                                    <span>Химикат</span>
+                                                    <h2>Нитроглицерин</h2>
+                                                </div>
+                                                <div class="price-block">
+                                                    <div class="item">
+                                                        <div class="value">25$</div>
+                                                        <p>цена<br/>покупки</p>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="value">3$</div>
+                                                        <p>прибыль<br/>в сутки</p>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-block"><a href="#" class="btn yellow">Купить</a></div>
+                                            </div>
+                                        </div>
+                                    </div><!--filter-block filter-item-->
+                                    
+                                    <div class="filter-item">
+                                        <div id="nanoglycerin">
+                                            <div class="img">
+                                                <div class="bubbles-block b-1">
+                                                    <span class="bubbles-1 bubbles"></span>
+                                                    <span class="bubbles-2 bubbles"></span>
+                                                    <span class="bubbles-3 bubbles"></span>
+                                                    <span class="bubbles-4 bubbles"></span>
+                                                </div>
+                                                <div class="bubbles-block b-2">
+                                                    <span class="bubbles-1 bubbles"></span>
+                                                    <span class="bubbles-2 bubbles"></span>
+                                                    <span class="bubbles-3 bubbles"></span>
+                                                    <span class="bubbles-4 bubbles"></span>
+                                                </div>
+                                                <img src="img/filter/nanoglycerin.png" alt=""/>
+                                            </div><!--img-->
+                                            <div class="info">
+                                                <div class="title">
+                                                    <span>Химикат</span>
+                                                    <h2>Наноглицерин</h2>
+                                                </div>
+                                                <div class="price-block">
+                                                    <div class="item">
+                                                        <div class="value">25$</div>
+                                                        <p>цена<br/>покупки</p>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="value">3$</div>
+                                                        <p>прибыль<br/>в сутки</p>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-block"><a href="#" class="btn yellow">Купить</a></div>
+                                            </div>
+                                        </div>
+                                    </div><!--filter-block filter-item-->
+                                </div><!--filter-block-->
+                            </div><!--BOX 2-->
+                            
+                            <div class="box">
+                                <div class="txt-block">
+                                	<p>Мощность вашей лаборатории определяет количество Вашего ежедневного дохода. Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.</p>
+                                </div>
+                                <div class="filter-block">
+                                    <div class="filter-item">
+                                        <div id="local">
+                                            <div class="img top10">
+                                                <div class="bubbles-block b-1">
+                                                    <span class="bubbles-1 bubbles"></span>
+                                                    <span class="bubbles-2 bubbles"></span>
+                                                    <span class="bubbles-3 bubbles"></span>
+                                                    <span class="bubbles-4 bubbles"></span>
+                                                </div>
+                                                <div class="bubbles-block b-2">
+                                                    <span class="bubbles-1 bubbles"></span>
+                                                    <span class="bubbles-2 bubbles"></span>
+                                                    <span class="bubbles-3 bubbles"></span>
+                                                    <span class="bubbles-4 bubbles"></span>
+                                                </div>
+                                                <img src="img/filter/local.png" alt=""/>
+                                            </div><!--img-->
+                                            <div class="info">
+                                                <div class="title">
+                                                    <span>ОтДЕЛ ОБН</span>
+                                                    <h2>МЕСТНЫЙ</h2>
+                                                </div>
+                                                <div class="price-block">
+                                                    <div class="item">
+                                                        <div class="value">25$</div>
+                                                        <p>цена<br/>покупки</p>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="value">3$</div>
+                                                        <p>прибыль<br/>в сутки</p>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-block"><a href="#" class="btn yellow">Купить</a></div>
+                                            </div>
+                                        </div>
+                                    </div><!--filter-block filter-item-->
+                                    <div class="filter-item">
+                                        <div id="federal">
+                                            <div class="img top10">
+                                                <div class="bubbles-block b-1">
+                                                    <span class="bubbles-1 bubbles"></span>
+                                                    <span class="bubbles-2 bubbles"></span>
+                                                    <span class="bubbles-3 bubbles"></span>
+                                                    <span class="bubbles-4 bubbles"></span>
+                                                </div>
+                                                <div class="bubbles-block b-2">
+                                                    <span class="bubbles-1 bubbles"></span>
+                                                    <span class="bubbles-2 bubbles"></span>
+                                                    <span class="bubbles-3 bubbles"></span>
+                                                    <span class="bubbles-4 bubbles"></span>
+                                                </div>
+                                                <img src="img/filter/federal.png" alt=""/>
+                                            </div><!--img-->
+                                            <div class="info">
+                                                <div class="title">
+                                                    <span>ОтДЕЛ ОБН</span>
+                                                    <h2>ФЕДЕРАЛЬНЫЙ</h2>
+                                                </div>
+                                                <div class="price-block">
+                                                    <div class="item">
+                                                        <div class="value">25$</div>
+                                                        <p>цена<br/>покупки</p>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="value">3$</div>
+                                                        <p>прибыль<br/>в сутки</p>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-block"><a href="#" class="btn yellow">Купить</a></div>
+                                            </div>
+                                        </div>
+                                    </div><!--filter-block filter-item-->
+                                    <div class="filter-item">
+                                        <div id="international">
+                                            <div class="img">
+                                                <div class="bubbles-block b-1">
+                                                    <span class="bubbles-1 bubbles"></span>
+                                                    <span class="bubbles-2 bubbles"></span>
+                                                    <span class="bubbles-3 bubbles"></span>
+                                                    <span class="bubbles-4 bubbles"></span>
+                                                </div>
+                                                <div class="bubbles-block b-2">
+                                                    <span class="bubbles-1 bubbles"></span>
+                                                    <span class="bubbles-2 bubbles"></span>
+                                                    <span class="bubbles-3 bubbles"></span>
+                                                    <span class="bubbles-4 bubbles"></span>
+                                                </div>
+                                                <img src="img/filter/international.png" alt=""/>
+                                            </div><!--img-->
+                                            <div class="info">
+                                                <div class="title">
+                                                    <span>ОтДЕЛ ОБН</span>
+                                                    <h2>Международный</h2>
+                                                </div>
+                                                <div class="price-block">
+                                                    <div class="item">
+                                                        <div class="value">25$</div>
+                                                        <p>цена<br/>покупки</p>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="value">3$</div>
+                                                        <p>прибыль<br/>в сутки</p>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-block"><a href="#" class="btn yellow">Купить</a></div>
+                                            </div>
+                                        </div>
+                                    </div><!--filter-block filter-item-->
+                                </div><!--filter-block-->
+                            </div><!--BOX 3-->
+                        </div>
+                    </div><!--container-->
+                </section>
+                
+            </div><!-- End #wrapper --> 
+    
+            <footer class="container">
+                <div class="flex">
+                    <div class="copyrighted">Laba.cc © 2018. All Rights Reserved.</div>
+                    <div id="social-networks">
+                        <ul class="social-networks">
+                            <li><a href="#"><img src="img/admin/ico/social/instagram.png" alt="instagram"></a></li>
+                            <li><a href="#"><img src="img/admin/ico/social/facebook.png" alt="facebook"></a></li>
+                            <li><a href="#"><img src="img/admin/ico/social/twitter.png" alt="twitter"></a></li>
+                            <li><a href="#"><img src="img/admin/ico/social/vk.png" alt="vk"></a></li>
+                            <li><a href="#"><img src="img/admin/ico/social/youtube.png" alt="youtube"></a></li>
+                        </ul>
+                    </div><!--social-networks-->  
+                </div>
+            </footer>
+        </div><!--/Main-->
+       
+       <script type="text/javascript" src="_Laba_admin/js/live-stat.js"></script>
+	   <script type="text/javascript" src="_Laba_admin/js/main.js"></script>  
+	</body>
+</html>
